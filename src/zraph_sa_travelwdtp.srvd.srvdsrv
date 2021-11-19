@@ -1,0 +1,21 @@
+@EndUserText.label: 'RAP HandsOn: Travel Draft Scenario'
+define service ZRAPH_SA_TRAVELWDTP {
+  expose ZRAPH_SA_C_TravelWDTP as Travel;
+  expose ZRAPH_SA_C_BookingWDTP as Booking;
+  expose ZRAPH_SA_C_BookingSuplmentWDTP as BookingSupplement;
+  expose ZRAPH_SA_C_RoomReservationWDTP as RoomReservation;
+  expose /DMO/I_Supplement as Supplement;
+  expose /DMO/I_SupplementText as SupplementText;
+  expose /DMO/I_Customer as Passenger;
+  expose /DMO/I_Agency as TravelAgency;
+  expose /DMO/I_Carrier as Carrier;
+  expose /DMO/I_Connection as FlightConnection;
+  expose /DMO/I_Flight as Flight;
+  expose /DMO/I_Airport as Airport;
+  expose I_Currency as Currency;
+  expose I_Country as Country;
+  expose ZRAPH_I_HOTEL as Hotel;
+  expose ZRAPH_I_HotelRoomType as HotelRoomType;
+  expose ZRAPH_I_OverallStatus as TravelStatus;
+  expose ZRAPH_I_OverallStatusText as TravelStatusText;
+}
